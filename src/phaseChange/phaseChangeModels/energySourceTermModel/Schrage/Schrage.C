@@ -22,7 +22,7 @@ License
 #include "addToRunTimeSelectionTable.H"
 #include "zeroGradientFvPatchFields.H"
 
-#include "alphaContactAngleFvPatchScalarField.H"
+#include "alphaContactAngleTwoPhaseFvPatchScalarField.H"
 #include "mathematicalConstants.H"
 #include "surfaceInterpolate.H"
 #include "fvcDiv.H"

@@ -1,0 +1,55 @@
+Duplicate entry isoAlpha in runtime selection table reconstructionSchemes
+#0	/home/ded/OpenFOAM/OpenFOAM-v2012-debug/platforms/linux64GccDPInt32Debug/lib/libOpenFOAM.so(_ZN4Foam5error14safePrintStackERSo+0x3a) [0x7feaf0fe1244]
+#1	/home/ded/OpenFOAM/OpenFOAM-v2012-debug/platforms/linux64GccDPInt32Debug/lib/libgeometricVoF.so(_ZN4Foam21reconstructionSchemes31addcomponentsConstructorToTableINS_14reconstruction8isoAlphaEEC1ERKNS_4wordE+0xc1) [0x7feaf2d8bbf9]
+#2	/home/ded/OpenFOAM/OpenFOAM-v2012-debug/platforms/linux64GccDPInt32Debug/lib/libgeometricVoF.so(+0x19235c) [0x7feaf2d8b35c]
+#3	/home/ded/OpenFOAM/OpenFOAM-v2012-debug/platforms/linux64GccDPInt32Debug/lib/libgeometricVoF.so(+0x1923aa) [0x7feaf2d8b3aa]
+#4	/lib64/ld-linux-x86-64.so.2(+0x11dbe) [0x7feaf5a51dbe]
+#5	/lib64/ld-linux-x86-64.so.2(+0x11ea8) [0x7feaf5a51ea8]
+#6	/lib64/ld-linux-x86-64.so.2(+0x110a) [0x7feaf5a4110a]
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2012-debug                           |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 21dda3254c-20210323 OPENFOAM=2012 patch=210210
+Arch   : "LSB;label=32;scalar=64"
+Exec   : initAlphaField
+Date   : Mar 30 2021
+Time   : 18:50:08
+Host   : OS-Lenovo
+PID    : 31874
+I/O    : uncollated
+Case   : /home/ded/OpenFOAM/ded-v2012/solvers/TwoPhaseFlow-debug/run/velocityStaticCircle
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+--> FOAM Warning : 
+    From static Foam::IOstreamOption::compressionType Foam::IOstreamOption::compressionEnum(const Foam::word&, Foam::IOstreamOption::compressionType)
+    in file db/IOstreams/IOstreams/IOstreamOption.C at line 115
+    Unknown compression specifier 'compressed', using compression off
+Create mesh for time = 0
+
+Reading field alpha1
+
+Reading initAlphaFieldDict
+#0  Foam::error::printStack(Foam::Ostream&)addr2line: DWARF error: could not find variable specification at offset 128
+addr2line: DWARF error: could not find variable specification at offset 135
+ at ~/OpenFOAM/OpenFOAM-v2012-debug/src/OSspecific/POSIX/printStack/printStack.C:237
+#1  Foam::sigSegv::sigHandler(int)addr2line: DWARF error: could not find variable specification at offset 128
+addr2line: DWARF error: could not find variable specification at offset 135
+addr2line: DWARF error: could not find variable specification at offset 47
+ at ~/OpenFOAM/OpenFOAM-v2012-debug/src/OSspecific/POSIX/signals/sigSegv.C:51
+#2  ? in /lib/x86_64-linux-gnu/libpthread.so.0
+#3  Foam::primitiveMesh::cells() const at ~/OpenFOAM/OpenFOAM-v2012-debug/src/OpenFOAM/meshes/primitiveMesh/primitiveMeshCells.C:140
+#4  Foam::cutCellIso::calcSubCell(int const&, double) at ~/OpenFOAM/ded-v2012/solvers/TwoPhaseFlow-debug/src/VoF/cellCuts/cutCell/cutCellIso.C:70
+#5  ? in ~/OpenFOAM/ded-v2012-debug/platforms/linux64GccDPInt32Debug/bin/initAlphaField
+#6  __libc_start_main in /lib/x86_64-linux-gnu/libc.so.6
+#7  ? in ~/OpenFOAM/ded-v2012-debug/platforms/linux64GccDPInt32Debug/bin/initAlphaField
+Segmentation fault (core dumped)

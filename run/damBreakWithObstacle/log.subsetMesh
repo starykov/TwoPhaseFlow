@@ -1,0 +1,38 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2012                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 79e353b8-20201222 OPENFOAM=2012
+Arch   : "LSB;label=32;scalar=64"
+Exec   : subsetMesh -overwrite c0 -patch walls
+Date   : Mar 28 2021
+Time   : 22:50:23
+Host   : OS-Lenovo
+PID    : 20026
+I/O    : uncollated
+Case   : /home/ded/OpenFOAM/ded-v2012/solvers/TwoPhaseFlow/run/damBreakWithObstacle
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Adding exposed internal faces to existing patch "walls"
+
+Using cellSet c0
+
+Subset 4032 of 4096 cells
+
+Subsetting volScalarField (alpha.water p_rgh)
+Subsetting volVectorField (U)
+Writing subsetted mesh and fields to time 0
+
+End
+

@@ -17,13 +17,13 @@ FoamFile
 
 phases (water air);
 
-pMin            pMin [ 1 -1 -2 0 0 0 0 ] 10000;
+pMin            10000;
 
-sigma           sigma [ 1 0 -2 0 0 0 0 ] 0.0;//0.0089004;
+sigma            0.0;//0.0089004;
 
-TMin            TMin [0 0 0 1 0 0 0] 60.0;
+TMin             60.0;
 
-TMax            TMax [0 0 0 1 0 0 0] 500.0;
+TMax            500.0;
 
 water
 {

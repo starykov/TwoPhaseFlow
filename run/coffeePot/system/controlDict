@@ -56,16 +56,15 @@ maxCapillaryNum 1;
 libs
 (
     "libpostProcess.so"
-    "libfluidThermo.so"
 );
-
+/*
 functions
 {
 
     intPsi
     {
         type            fieldIntegrate;
-        functionObjectLibs ("libpostProcess.so");
+        libs ("libpostProcess.so");
 
         // Write at same frequency as fields
         writeControl    timeStep;
@@ -75,5 +74,5 @@ functions
     }
 
 }
-
+*/
 // ************************************************************************* //

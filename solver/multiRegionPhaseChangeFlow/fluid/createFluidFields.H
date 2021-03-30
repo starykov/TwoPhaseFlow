@@ -219,19 +219,19 @@ forAll(fluidRegions, i)
     pMinFluid.set
     (
         i,
-        new dimensionedScalar(thermoFluid[i].lookup("pMin"))
+        new dimensionedScalar("pMin", dimPressure, thermoFluid[i])
     );
 
     TMaxFluid.set
     (
         i,
-        new dimensionedScalar(thermoFluid[i].lookup("TMax"))
+        new dimensionedScalar("TMax", dimTemperature, thermoFluid[i])
     );
 
     TMinFluid.set
     (
         i,
-        new dimensionedScalar(thermoFluid[i].lookup("TMin"))
+        new dimensionedScalar("TMin", dimTemperature, thermoFluid[i])
     );
 
     Info<< "    creating surfaceForcesModel \n" << endl;
@@ -350,8 +350,8 @@ forAll(fluidRegions, i)
         IOobject::NO_WRITE
     );
 
-    const bool alphaRestart =
-    alphaPhi10Header.typeHeaderOk<surfaceScalarField>(true);
+    //const bool alphaRestart =
+    //alphaPhi10Header.typeHeaderOk<surfaceScalarField>(true);
 
     // MULES flux from previous time-step
     alphaPhiFluid.set

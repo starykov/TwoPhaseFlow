@@ -1,0 +1,153 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2012                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 79e353b8-20201222 OPENFOAM=2012
+Arch   : "LSB;label=32;scalar=64"
+Exec   : cartesian2DMesh
+Date   : Mar 28 2021
+Time   : 22:40:04
+Host   : OS-Lenovo
+PID    : 19425
+I/O    : uncollated
+Case   : /home/ded/OpenFOAM/ded-v2012/solvers/TwoPhaseFlow/run/coffeePot
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+--> FOAM Warning : 
+    From void* Foam::dlLibraryTable::openLibrary(const Foam::fileName&, bool)
+    in file db/dynamicLibrary/dlLibraryTable/dlLibraryTable.C at line 188
+    Could not load "libfluidThermo.so"
+libfluidThermo.so: cannot open shared object file: No such file or directory
+Detected a 2D surface in the x - y plane
+Found 0 duplicate triangles
+Created 9 surface patches
+Setting root cube size and refinement parameters
+Root box (-175.27435 -134.142 -199.8) (234.32565 275.458 209.8)
+Requested cell size corresponds to octree level 10
+Refining boundary
+Refining boundary boxes to the given size
+Finished refining boundary boxes
+Performing automatic refinement
+Performing automatic refinement
+Marking inside/outside.
+Number of internal boxes is 2862
+Number of outside boxes is 2496
+Number of data boxes is 1501
+Number of unknown boxes is 0
+Refining boxes near DATA boxes
+Marking inside/outside.
+Number of internal boxes is 28518
+Number of outside boxes is 2496
+Number of data boxes is 1501
+Number of unknown boxes is 0
+Finished refining boxes near DATA boxes
+Extracting polyMesh
+Creating octree vertices
+Octree nodes 61430
+Resizing points!
+Finished creating octree vertices
+Creating polyMesh from octree
+Reordering boundary faces 
+Finished reordering boundary faces
+Found 58440 boundary faces 
+Finished creating polyMesh
+Mesh has :
+58442 vertices 
+114507 faces
+28429 cells
+Finished extracting polyMesh
+Checking for irregular surface connections
+Checking cells connected to surface vertices
+Found 58440 boundary faces 
+Found 0 problematic vertices
+Finished checking cells connected to surface vertices
+Checking for non - manifold surface edges
+Found 0 non - manifold edges
+Finished checking for non - manifold surface edges
+Checking faces connections to surface vertices
+Found 0 invalid connections
+Finished checking faces connections to surface vertices
+Finished checking for irregular surface connections
+Found 58440 boundary faces 
+Found 1 non - mappable cells
+Removing selected cells from the mesh
+New cells size 28428
+Reordering boundary faces 
+Finished reordering boundary faces
+Removing faces
+Finished removing faces
+Finished removing selected cells from the mesh
+Found 58436 boundary faces 
+Found 0 non - mappable cells
+Checking cell connections
+Finished checking cell connections
+Checking for irregular surface connections
+Checking cells connected to surface vertices
+Found 58436 boundary faces 
+Found 0 problematic vertices
+Finished checking cells connected to surface vertices
+Checking for non - manifold surface edges
+Found 0 non - manifold edges
+Finished checking for non - manifold surface edges
+Checking faces connections to surface vertices
+Found 0 invalid connections
+Finished checking faces connections to surface vertices
+Finished checking for irregular surface connections
+Found 58436 boundary faces 
+Found 0 non - mappable cells
+Checking cell connections
+Finished checking cell connections
+Found 58436 boundary faces 
+Marked 0 faces for decomposition
+Found 58436 boundary faces 
+Found 0 corners at the surface of the volume mesh
+Found 0 edge points at the surface of the volume mesh
+Smoothing mesh surface before mapping. Iteration:..
+Found 58436 boundary faces 
+Found 18 corners at the surface of the volume mesh
+Found 3142 edge points at the surface of the volume mesh
+Found 58436 boundary faces 
+Found 18 corners at the surface of the volume mesh
+Found 3142 edge points at the surface of the volume mesh
+Found 18 corners at the surface of the volume mesh
+Found 3142 edge points at the surface of the volume mesh
+Optimizing edges. Iteration:.....
+Optimizing surface vertices. Iteration:.....
+Iteration 0. Number of bad faces 0
+Found 58436 boundary faces 
+Found 18 corners at the surface of the volume mesh
+Found 3142 edge points at the surface of the volume mesh
+Found 18 corners at the surface of the volume mesh
+Found 3142 edge points at the surface of the volume mesh
+Resizing points!
+Starting creating layer cells
+Adding 1585 cells to the mesh
+Finished adding cells to the mesh
+Reordering boundary faces 
+Finished reordering boundary faces
+Finished creating layer cells
+Found 61616 boundary faces 
+Found 18 corners at the surface of the volume mesh
+Found 3162 edge points at the surface of the volume mesh
+Found 18 corners at the surface of the volume mesh
+Found 3162 edge points at the surface of the volume mesh
+Optimizing edges. Iteration:.....
+Optimizing surface vertices. Iteration:.....
+Iteration 0. Number of bad faces 0
+Renumbering the mesh
+Finished renumbering the mesh
+Renaming boundary patches
+Finished renaming boundary patches
+ExecutionTime = 9.68 s
+ClockTime = 3 s
+End
+

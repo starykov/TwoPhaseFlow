@@ -24,6 +24,7 @@ EXE_LIBS = \
     -lcompressibleTransportModels \
     -lfluidThermophysicalModels \
     -lspecie \
+    -lgeometricVoF \
     -ltwoPhaseMixture \
     -ltwoPhaseProperties \
     -linterfaceProperties \

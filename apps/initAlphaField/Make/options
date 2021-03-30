@@ -11,6 +11,7 @@ EXE_LIBS = \
     -L$(FOAM_USER_LIBBIN) \
     -lfiniteVolume \
     -lsurfMesh \
+    -lgeometricVoF \
     -lVoF \
     -lfileFormats \
     -lmeshTools \

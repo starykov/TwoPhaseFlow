@@ -1,0 +1,163 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2012                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 79e353b8-20201222 OPENFOAM=2012
+Arch   : "LSB;label=32;scalar=64"
+Exec   : decomposePar -allRegions
+Date   : Mar 28 2021
+Time   : 22:40:14
+Host   : OS-Lenovo
+PID    : 19712
+I/O    : uncollated
+Case   : /home/ded/OpenFOAM/ded-v2012/solvers/TwoPhaseFlow/run/coffeePot
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+--> FOAM Warning : 
+    From void* Foam::dlLibraryTable::openLibrary(const Foam::fileName&, bool)
+    in file db/dynamicLibrary/dlLibraryTable/dlLibraryTable.C at line 188
+    Could not load "libfluidThermo.so"
+libfluidThermo.so: cannot open shared object file: No such file or directory
+Decomposing all regions in regionProperties
+    (fluid solid)
+
+
+
+Decomposing mesh fluid
+
+Create mesh
+
+Calculating distribution of cells
+Selecting decompositionMethod scotch [2]
+
+Finished decomposition in 0.01 s
+
+Calculating original mesh data
+
+Distributing cells to processors
+
+Distributing faces to processors
+
+Distributing points to processors
+
+Constructing processor meshes
+--> FOAM Warning : 
+    From void* Foam::dlLibraryTable::openLibrary(const Foam::fileName&, bool)
+    in file db/dynamicLibrary/dlLibraryTable/dlLibraryTable.C at line 188
+    Could not load "libfluidThermo.so"
+libfluidThermo.so: cannot open shared object file: No such file or directory
+
+Processor 0
+    Number of cells = 14861
+    Number of faces shared with processor 1 = 80
+    Number of processor patches = 1
+    Number of processor faces = 80
+    Number of boundary faces = 30822
+--> FOAM Warning : 
+    From void* Foam::dlLibraryTable::openLibrary(const Foam::fileName&, bool)
+    in file db/dynamicLibrary/dlLibraryTable/dlLibraryTable.C at line 188
+    Could not load "libfluidThermo.so"
+libfluidThermo.so: cannot open shared object file: No such file or directory
+
+Processor 1
+    Number of cells = 15152
+    Number of faces shared with processor 0 = 80
+    Number of processor patches = 1
+    Number of processor faces = 80
+    Number of boundary faces = 30794
+
+Number of processor faces = 80
+Max number of cells = 15152 (0.96957985% above average 15006.5)
+Max number of processor patches = 1 (0% above average 1)
+Max number of faces between processors = 80 (0% above average 80)
+
+Time = 0
+
+Processor 0: field transfer
+--> FOAM Warning : 
+    From void* Foam::dlLibraryTable::openLibrary(const Foam::fileName&, bool)
+    in file db/dynamicLibrary/dlLibraryTable/dlLibraryTable.C at line 188
+    Could not load "libfluidThermo.so"
+libfluidThermo.so: cannot open shared object file: No such file or directory
+Processor 1: field transfer
+--> FOAM Warning : 
+    From void* Foam::dlLibraryTable::openLibrary(const Foam::fileName&, bool)
+    in file db/dynamicLibrary/dlLibraryTable/dlLibraryTable.C at line 188
+    Could not load "libfluidThermo.so"
+libfluidThermo.so: cannot open shared object file: No such file or directory
+
+
+Decomposing mesh solid
+
+Create mesh
+
+Calculating distribution of cells
+Selecting decompositionMethod scotch [2]
+
+Finished decomposition in 0.02 s
+
+Calculating original mesh data
+
+Distributing cells to processors
+
+Distributing faces to processors
+
+Distributing points to processors
+
+Constructing processor meshes
+--> FOAM Warning : 
+    From void* Foam::dlLibraryTable::openLibrary(const Foam::fileName&, bool)
+    in file db/dynamicLibrary/dlLibraryTable/dlLibraryTable.C at line 188
+    Could not load "libfluidThermo.so"
+libfluidThermo.so: cannot open shared object file: No such file or directory
+
+Processor 0
+    Number of cells = 4801
+    Number of faces shared with processor 1 = 5
+    Number of processor patches = 1
+    Number of processor faces = 5
+    Number of boundary faces = 11371
+--> FOAM Warning : 
+    From void* Foam::dlLibraryTable::openLibrary(const Foam::fileName&, bool)
+    in file db/dynamicLibrary/dlLibraryTable/dlLibraryTable.C at line 188
+    Could not load "libfluidThermo.so"
+libfluidThermo.so: cannot open shared object file: No such file or directory
+
+Processor 1
+    Number of cells = 4805
+    Number of faces shared with processor 0 = 5
+    Number of processor patches = 1
+    Number of processor faces = 5
+    Number of boundary faces = 11479
+
+Number of processor faces = 5
+Max number of cells = 4805 (0.041640641% above average 4803)
+Max number of processor patches = 1 (0% above average 1)
+Max number of faces between processors = 5 (0% above average 5)
+
+Time = 0
+
+Processor 0: field transfer
+--> FOAM Warning : 
+    From void* Foam::dlLibraryTable::openLibrary(const Foam::fileName&, bool)
+    in file db/dynamicLibrary/dlLibraryTable/dlLibraryTable.C at line 188
+    Could not load "libfluidThermo.so"
+libfluidThermo.so: cannot open shared object file: No such file or directory
+Processor 1: field transfer
+--> FOAM Warning : 
+    From void* Foam::dlLibraryTable::openLibrary(const Foam::fileName&, bool)
+    in file db/dynamicLibrary/dlLibraryTable/dlLibraryTable.C at line 188
+    Could not load "libfluidThermo.so"
+libfluidThermo.so: cannot open shared object file: No such file or directory
+
+End
+

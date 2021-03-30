@@ -1,0 +1,130 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2012                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 79e353b8-20201222 OPENFOAM=2012
+Arch   : "LSB;label=32;scalar=64"
+Exec   : cartesian2DMesh
+Date   : Mar 28 2021
+Time   : 22:40:03
+Host   : OS-Lenovo
+PID    : 19184
+I/O    : uncollated
+Case   : /home/ded/OpenFOAM/ded-v2012/solvers/TwoPhaseFlow/run/coffeePot
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+--> FOAM Warning : 
+    From void* Foam::dlLibraryTable::openLibrary(const Foam::fileName&, bool)
+    in file db/dynamicLibrary/dlLibraryTable/dlLibraryTable.C at line 188
+    Could not load "libfluidThermo.so"
+libfluidThermo.so: cannot open shared object file: No such file or directory
+Detected a 2D surface in the x - y plane
+Found 0 duplicate triangles
+Created 11 surface patches
+Setting root cube size and refinement parameters
+Root box (-174.8 -134.642 -199.8) (234.8 274.958 209.8)
+Requested cell size corresponds to octree level 11
+Refining boundary
+Refining boundary boxes to the given size
+Finished refining boundary boxes
+Performing automatic refinement
+Performing automatic refinement
+Marking inside/outside.
+Number of internal boxes is 4191
+Number of outside boxes is 8093
+Number of data boxes is 3266
+Number of unknown boxes is 0
+Refining boxes near DATA boxes
+Marking inside/outside.
+Number of internal boxes is 7470
+Number of outside boxes is 8093
+Number of data boxes is 3266
+Number of unknown boxes is 0
+Finished refining boxes near DATA boxes
+Extracting polyMesh
+Creating octree vertices
+Octree nodes 22090
+Resizing points!
+Finished creating octree vertices
+Creating polyMesh from octree
+Reordering boundary faces 
+Finished reordering boundary faces
+Found 15574 boundary faces 
+Finished creating polyMesh
+Mesh has :
+15576 vertices 
+25715 faces
+5976 cells
+Finished extracting polyMesh
+Checking for irregular surface connections
+Checking cells connected to surface vertices
+Found 15574 boundary faces 
+Found 0 problematic vertices
+Finished checking cells connected to surface vertices
+Checking for non - manifold surface edges
+Found 0 non - manifold edges
+Finished checking for non - manifold surface edges
+Checking faces connections to surface vertices
+Found 0 invalid connections
+Finished checking faces connections to surface vertices
+Finished checking for irregular surface connections
+Found 15574 boundary faces 
+Found 0 non - mappable cells
+Checking cell connections
+Finished checking cell connections
+Found 15574 boundary faces 
+Marked 0 faces for decomposition
+Found 15574 boundary faces 
+Found 0 corners at the surface of the volume mesh
+Found 7244 edge points at the surface of the volume mesh
+Smoothing mesh surface before mapping. Iteration:..
+Found 15574 boundary faces 
+Found 22 corners at the surface of the volume mesh
+Found 7222 edge points at the surface of the volume mesh
+Found 15574 boundary faces 
+Found 22 corners at the surface of the volume mesh
+Found 7222 edge points at the surface of the volume mesh
+Found 22 corners at the surface of the volume mesh
+Found 7222 edge points at the surface of the volume mesh
+Optimizing edges. Iteration:.....
+Optimizing surface vertices. Iteration:.....
+Iteration 0. Number of bad faces 0
+Found 15574 boundary faces 
+Found 22 corners at the surface of the volume mesh
+Found 7222 edge points at the surface of the volume mesh
+Found 22 corners at the surface of the volume mesh
+Found 7222 edge points at the surface of the volume mesh
+Resizing points!
+Starting creating layer cells
+Adding 3630 cells to the mesh
+Resizing cells!
+Resizing faces!
+Finished adding cells to the mesh
+Reordering boundary faces 
+Finished reordering boundary faces
+Finished creating layer cells
+Found 22850 boundary faces 
+Found 22 corners at the surface of the volume mesh
+Found 7254 edge points at the surface of the volume mesh
+Found 22 corners at the surface of the volume mesh
+Found 7254 edge points at the surface of the volume mesh
+Optimizing edges. Iteration:.....
+Optimizing surface vertices. Iteration:.....
+Iteration 0. Number of bad faces 0
+Renumbering the mesh
+Finished renumbering the mesh
+Renaming boundary patches
+Finished renaming boundary patches
+ExecutionTime = 3.36 s
+ClockTime = 1 s
+End
+

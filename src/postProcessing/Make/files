@@ -4,7 +4,7 @@ wallHeatFluxSolid/wallHeatFluxSolid.C
 thermalResiduals/thermalResiduals.C
 
 interface/interface.C
-interface/sampledInterface.C
+/*interface/sampledInterface.C*/
 
 interfaceRegion/interfaceRegion.C
 

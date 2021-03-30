@@ -26,7 +26,7 @@ Class
 
 Description
     A dynamic alphaContactAngle scalar boundary condition
-    (alphaContactAngleFvPatchScalarField)
+    (alphaContactAngleTwoPhaseFvPatchScalarField)
 
 SourceFiles
     dynamicAlphaContactAngleJiangFvPatchScalarField.C
@@ -41,7 +41,7 @@ thetaD^3 −θ0^3 = cT Ca ct numerical
 #ifndef dynamicAlphaContactAngleJiangFvPatchScalarField_H
 #define dynamicAlphaContactAngleJiangFvPatchScalarField_H
 
-#include "alphaContactAngleFvPatchScalarField.H"
+#include "alphaContactAngleTwoPhaseFvPatchScalarField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -54,7 +54,7 @@ namespace Foam
 
 class dynamicAlphaContactAngleJiangFvPatchScalarField
 :
-    public alphaContactAngleFvPatchScalarField
+    public alphaContactAngleTwoPhaseFvPatchScalarField
 {
     // Private data
 

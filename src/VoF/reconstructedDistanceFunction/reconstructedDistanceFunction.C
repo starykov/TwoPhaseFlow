@@ -28,7 +28,7 @@ License
 #include "wedgePolyPatch.H"
 #include "indexedOctree.H"
 #include "treeDataPoint.H"
-#include "alphaContactAngleFvPatchScalarField.H"
+#include "alphaContactAngleTwoPhaseFvPatchScalarField.H"
 
 namespace Foam
 {
@@ -690,12 +690,12 @@ void Foam::reconstructedDistanceFunction::updateContactAngle
 
     forAll(boundary, patchi)
     {
-        if (isA<alphaContactAngleFvPatchScalarField>(abf[patchi]))
+        if (isA<alphaContactAngleTwoPhaseFvPatchScalarField>(abf[patchi]))
         {
-            alphaContactAngleFvPatchScalarField& acap =
-                const_cast<alphaContactAngleFvPatchScalarField&>
+            alphaContactAngleTwoPhaseFvPatchScalarField& acap =
+                const_cast<alphaContactAngleTwoPhaseFvPatchScalarField&>
                 (
-                    refCast<const alphaContactAngleFvPatchScalarField>
+                    refCast<const alphaContactAngleTwoPhaseFvPatchScalarField>
                     (
                         abf[patchi]
                     )

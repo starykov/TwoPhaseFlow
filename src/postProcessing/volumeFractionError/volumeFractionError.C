@@ -179,7 +179,7 @@ bool Foam::functionObjects::volumeFractionError::write()
 
     const volScalarField& alpha = lookupObject<volScalarField>(Field_);
 
-    vector centre = dict_.lookup("origin");
+    vector centre = vector(dict_.lookup("origin"));
 
     const volVectorField& U = mesh_.lookupObject<volVectorField>("U");
 
@@ -291,7 +291,7 @@ bool Foam::functionObjects::volumeFractionError::write()
 
     if (Pstream::master())
     {
-        writeTime(file());
+        writeCurrentTime(file());
 
         file()
             << token::TAB << E1

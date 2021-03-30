@@ -1,0 +1,131 @@
+Duplicate entry isoAlpha in runtime selection table reconstructionSchemes
+#0	/home/ded/OpenFOAM/OpenFOAM-v2012-debug/platforms/linux64GccDPInt32Debug/lib/libOpenFOAM.so(_ZN4Foam5error14safePrintStackERSo+0x3a) [0x7f61dadea244]
+#1	/home/ded/OpenFOAM/OpenFOAM-v2012-debug/platforms/linux64GccDPInt32Debug/lib/libgeometricVoF.so(_ZN4Foam21reconstructionSchemes31addcomponentsConstructorToTableINS_14reconstruction8isoAlphaEEC1ERKNS_4wordE+0xc1) [0x7f61dc168bf9]
+#2	/home/ded/OpenFOAM/OpenFOAM-v2012-debug/platforms/linux64GccDPInt32Debug/lib/libgeometricVoF.so(+0x19235c) [0x7f61dc16835c]
+#3	/home/ded/OpenFOAM/OpenFOAM-v2012-debug/platforms/linux64GccDPInt32Debug/lib/libgeometricVoF.so(+0x1923aa) [0x7f61dc1683aa]
+#4	/lib64/ld-linux-x86-64.so.2(+0x11dbe) [0x7f61e0141dbe]
+#5	/lib64/ld-linux-x86-64.so.2(+0x11ea8) [0x7f61e0141ea8]
+#6	/lib64/ld-linux-x86-64.so.2(+0x110a) [0x7f61e013110a]
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2012-debug                           |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 21dda3254c-20210323 OPENFOAM=2012 patch=210210
+Arch   : "LSB;label=32;scalar=64"
+Exec   : interFlow
+Date   : Mar 30 2021
+Time   : 18:50:14
+Host   : OS-Lenovo
+PID    : 31898
+I/O    : uncollated
+Case   : /home/ded/OpenFOAM/ded-v2012/solvers/TwoPhaseFlow-debug/run/velocityStaticCircle
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+--> FOAM Warning : 
+    From static Foam::IOstreamOption::compressionType Foam::IOstreamOption::compressionEnum(const Foam::word&, Foam::IOstreamOption::compressionType)
+    in file db/IOstreams/IOstreams/IOstreamOption.C at line 115
+    Unknown compression specifier 'compressed', using compression off
+Create mesh for time = 0
+
+Selecting dynamicFvMesh staticFvMesh
+
+PIMPLE: Operating solver in PISO mode
+
+Reading field p_rgh
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Reading transportProperties
+
+Selecting incompressible transport model Newtonian
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type laminar
+Selecting laminar stress model Stokes
+Selecting surfaceTension model constantCurvature
+Selecting surfaceTension model gravity
+Selecting surfaceTension model alphaCSF
+No MRF models present
+
+No finite volume options present
+Selecting advectionSchemes: isoAdvection
+Selecting reconstructionScheme: plicRDF
+GAMG:  Solving for pcorr, Initial residual = 0, Final residual = 0, No Iterations 0
+time step continuity errors : sum local = 0, global = 0, cumulative = 0
+Courant Number mean: 0 max: 0
+
+Starting time loop
+
+Duplicate entry interface in runtime selection table sampledSurface
+#0	/home/ded/OpenFOAM/OpenFOAM-v2012-debug/platforms/linux64GccDPInt32Debug/lib/libOpenFOAM.so(_ZN4Foam5error14safePrintStackERSo+0x3a) [0x7f61dadea244]
+#1	/home/ded/OpenFOAM/OpenFOAM-v2012-debug/platforms/linux64GccDPInt32Debug/lib/libgeometricVoF.so(_ZN4Foam14sampledSurface25addwordConstructorToTableINS_16sampledInterfaceEEC2ERKNS_4wordE+0xc1) [0x7f61dc1ad59b]
+#2	/home/ded/OpenFOAM/ded-v2012-debug/platforms/linux64GccDPInt32Debug/lib/libpostProcess.so(+0x2136ad) [0x7f61d28406ad]
+#3	/home/ded/OpenFOAM/ded-v2012-debug/platforms/linux64GccDPInt32Debug/lib/libpostProcess.so(+0x21372a) [0x7f61d284072a]
+#4	/lib64/ld-linux-x86-64.so.2(+0x11dbe) [0x7f61e0141dbe]
+#5	/lib64/ld-linux-x86-64.so.2(+0x11ea8) [0x7f61e0141ea8]
+#6	/lib/x86_64-linux-gnu/libc.so.6(_dl_catch_exception+0xe5) [0x7f61d9daa505]
+#7	/lib64/ld-linux-x86-64.so.2(+0x16505) [0x7f61e0146505]
+#8	/lib/x86_64-linux-gnu/libc.so.6(_dl_catch_exception+0x88) [0x7f61d9daa4a8]
+#9	/lib64/ld-linux-x86-64.so.2(+0x15b5d) [0x7f61e0145b5d]
+#10	/lib/x86_64-linux-gnu/libdl.so.2(+0x134c) [0x7f61da1d134c]
+#11	/lib/x86_64-linux-gnu/libc.so.6(_dl_catch_exception+0x88) [0x7f61d9daa4a8]
+#12	/lib/x86_64-linux-gnu/libc.so.6(_dl_catch_error+0x33) [0x7f61d9daa573]
+#13	/lib/x86_64-linux-gnu/libdl.so.2(+0x1b89) [0x7f61da1d1b89]
+#14	/lib/x86_64-linux-gnu/libdl.so.2(dlopen+0x48) [0x7f61da1d13d8]
+#15	/home/ded/OpenFOAM/OpenFOAM-v2012-debug/platforms/linux64GccDPInt32Debug/lib/libOpenFOAM.so(_ZN4Foam6dlOpenERKNS_8fileNameEb+0xb4) [0x7f61dade3670]
+#16	/home/ded/OpenFOAM/OpenFOAM-v2012-debug/platforms/linux64GccDPInt32Debug/lib/libOpenFOAM.so(_ZN4Foam6dlOpenERKNS_8fileNameERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+0x25) [0x7f61dade3b7e]
+#17	/home/ded/OpenFOAM/OpenFOAM-v2012-debug/platforms/linux64GccDPInt32Debug/lib/libOpenFOAM.so(_ZN4Foam14dlLibraryTable11openLibraryERKNS_8fileNameEb+0xaf) [0x7f61daaf18fb]
+#18	/home/ded/OpenFOAM/OpenFOAM-v2012-debug/platforms/linux64GccDPInt32Debug/lib/libOpenFOAM.so(_ZN4Foam14dlLibraryTable4openERKNS_8fileNameEb+0x3f) [0x7f61daaf2627]
+#19	/home/ded/OpenFOAM/OpenFOAM-v2012-debug/platforms/linux64GccDPInt32Debug/lib/libOpenFOAM.so(_ZN4Foam14dlLibraryTable4openIPNS_9HashTableIPFNS_7autoPtrINS_14functionObjectEEERKNS_4wordERKNS_4TimeERKNS_10dictionaryEES6_NS_6string4hashEEEEEbSE_S8_RKT_b+0xe4) [0x7f61daafaf8a]
+#20	/home/ded/OpenFOAM/OpenFOAM-v2012-debug/platforms/linux64GccDPInt32Debug/lib/libOpenFOAM.so(_ZN4Foam14functionObject3NewERKNS_4wordERKNS_4TimeERKNS_10dictionaryE+0x1a5) [0x7f61daafa6cf]
+#21	/home/ded/OpenFOAM/OpenFOAM-v2012-debug/platforms/linux64GccDPInt32Debug/lib/libOpenFOAM.so(_ZN4Foam15functionObjects11timeControlC2ERKNS_4wordERKNS_4TimeERKNS_10dictionaryE+0x17b) [0x7f61dab0e483]
+#22	/home/ded/OpenFOAM/OpenFOAM-v2012-debug/platforms/linux64GccDPInt32Debug/lib/libOpenFOAM.so(_ZN4Foam18functionObjectList4readEv+0x960) [0x7f61dab001ec]
+#23	/home/ded/OpenFOAM/OpenFOAM-v2012-debug/platforms/linux64GccDPInt32Debug/lib/libOpenFOAM.so(_ZN4Foam18functionObjectList5startEv+0x1c) [0x7f61daafe54a]
+#24	/home/ded/OpenFOAM/OpenFOAM-v2012-debug/platforms/linux64GccDPInt32Debug/lib/libOpenFOAM.so(_ZNK4Foam4Time3runEv+0x17d) [0x7f61dab15dab]
+#25	interFlow(+0x7212b) [0x7f61e01d812b]
+#26	/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf2) [0x7f61d9c78cb2]
+#27	interFlow(+0x6d59e) [0x7f61e01d359e]
+Courant Number mean: 0 max: 0
+Interface Courant Number mean: 0 max: 0
+Capillary Number: 2.5053758996967e-28
+Time = 0.0001
+
+PIMPLE: iteration 1
+isoAdvection: After conservative bounding: min(alpha) = 0, max(alpha) = 1 + -1
+Phase-1 volume fraction = 0  Min(alpha.phase1) = 0  Max(alpha.phase1) = 0
+isoAdvection: After conservative bounding: min(alpha) = 0, max(alpha) = 1 + -1
+Phase-1 volume fraction = 0  Min(alpha.phase1) = 0  Max(alpha.phase1) = 0
+GAMG:  Solving for p_rgh, Initial residual = 0, Final residual = 0, No Iterations 5
+time step continuity errors : sum local = 0, global = 0, cumulative = 0
+GAMG:  Solving for p_rgh, Initial residual = 0, Final residual = 0, No Iterations 5
+time step continuity errors : sum local = 0, global = 0, cumulative = 0
+GAMG:  Solving for p_rgh, Initial residual = 0, Final residual = 0, No Iterations 5
+time step continuity errors : sum local = 0, global = 0, cumulative = 0
+GAMG:  Solving for p_rgh, Initial residual = 0, Final residual = 0, No Iterations 5
+time step continuity errors : sum local = 0, global = 0, cumulative = 0
+ExecutionTime = 8.64 s  ClockTime = 9 s
+
+fieldMinMax fieldMinMax1 write:
+    min/max(mag(U)) = 0 0
+    min/max(p) = 0 0
+
+Courant Number mean: 0 max: 0
+Interface Courant Number mean: 0 max: 0
+Capillary Number: 2.5053758996967e-28
+Time = 0.0002
+
+PIMPLE: iteration 1
+isoAdvection: After conservative bounding: min(alpha) = 0, max(alpha) = 1 + -1
+Phase-1 volume fraction = 0  Min(alpha.phase1) = 0  Max(alpha.phase1) = 0
+isoAdvection: After conservative bounding: min(alpha) = 0, max(alpha) = 1 + -1
+Phase-1 volume fraction = 0  Min(alpha.phase1) = 0  Max(alpha.phase1) = 0

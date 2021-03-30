@@ -41,7 +41,7 @@ Author
 #include "cutCellImpFunc.H"
 #include "cutCellIso.H"
 #include "reconstructionError.H"
-#include "isoCutCell.H"
+#include "cutCellIso.H"
 
 #include "surfaceForces.H"
 
@@ -203,7 +203,7 @@ int main(int argc, char *argv[])
           )
       );
 
-        vector centre = initAlphaFieldDict.lookup("origin");
+        vector centre = vector(initAlphaFieldDict.lookup("origin"));
     //    scalar radius = readScalar(initAlphaFieldDict.lookup("radius"));
 
         Random rndCentre(1234567);
@@ -247,7 +247,7 @@ int main(int argc, char *argv[])
     //
             // initAlphaFieldDict.set<vector>("origin",centrePos);
 
-            centre = initAlphaFieldDict.lookup("origin");
+            centre = vector(initAlphaFieldDict.lookup("origin"));
 
            Info << "centre " <<  centre << endl;
 

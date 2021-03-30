@@ -52,8 +52,8 @@
 
     volScalarField& dgdt = dgdtFluid[i];
 
-    interfaceProperties& interface = interfaceFluid[i];
-    bool frozenFlow = frozenFlowFluid[i];
+    //interfaceProperties& interface = interfaceFluid[i];
+    //bool frozenFlow = frozenFlowFluid[i];
 
     compressibleInterPhaseTransportModel& turbulence = turbulenceFluid[i];
 
